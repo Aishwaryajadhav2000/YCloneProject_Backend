@@ -38,5 +38,15 @@ connectDatabase().then(async ()=>{
 })
 
 
-
+//Routing
+//users Routing
+userRoutes(app)
+//Channels routing
+channelRoute(app)
+// app.use('/uploads/videos', express.static(path.join(process.cwd(), 'uploads/videos')));
+//Videos routing
+app.use('/api', videoRoutes);
+app.use("/uploads", express.static("uploads"));
+//Searching videos routing
+app.use("/api/search" , searchRoute)
 
