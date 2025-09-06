@@ -19,9 +19,9 @@ app.listen(PORT,()=>{
 //     console.log(err , "error while connecting...")
 // });
 
-// app.get('/' , (req,res)=>{
-//     res.send("Welcome to root route")
-// })
+app.get('/' , (req,res)=>{
+    res.send("Welcome to root route 2")
+})
 
 connectDatabase().then(async ()=>{
     await runAllSeeders();
