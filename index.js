@@ -20,7 +20,7 @@ app.listen(PORT,()=>{
 // });
 
 app.get('/' , (req,res)=>{
-    res.send("Welcome to root route 2")
+    res.send("Welcome to root route 3")
 })
 
 connectDatabase().then(async ()=>{
