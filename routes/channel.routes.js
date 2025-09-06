@@ -1,4 +1,4 @@
-import { creatch, getUserChannel } from "../controllers/channel.controller.js";
+import { creatch, getUserChannel } from "../controller/channel.controller.js";
 import { protect } from "../middlewares/verifyToken.js";
 
 export function channelRoute(app){

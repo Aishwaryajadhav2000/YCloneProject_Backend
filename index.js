@@ -6,6 +6,7 @@ import {runAllSeeders} from "./seeder/masterSeeder.js"
 import { userRoutes } from "./routes/users.route.js";
 import videoRoutes from "./routes/video.routes.js";
 import searchRoute from "./routes/search.route.js"
+import { channelRoute } from "./routes/channel.routes.js";
 
 
 const app = express();
@@ -33,7 +34,7 @@ app.listen(PORT,()=>{
 // });
 
 app.get('/' , (req,res)=>{
-    res.send("Welcome to root route 5")
+    res.send("Welcome to root route 6")
 })
 
 connectDatabase().then(async ()=>{

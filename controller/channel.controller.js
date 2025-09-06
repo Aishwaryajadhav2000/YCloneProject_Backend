@@ -1,4 +1,4 @@
-import channelCreate from "../models/Channel.model.js";
+import channelCreate from "../models/Channels.model.js";
 import ChannelsModel from "../models/Channels.model.js";
 import usersSchema from "../models/Users.model.js";
 import { v4 as uuidv4 } from "uuid";

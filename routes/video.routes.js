@@ -1,7 +1,7 @@
 // routes/videoRouter.js
 import express from 'express';
 import multer from 'multer';
-import {  addComment, getAllVideos,  getVideoById } from '../controllers/video.controller.js';
+import {  addComment, getAllVideos,  getVideoById } from '../controller/video.controller.js';
 import { protect } from '../middlewares/verifyToken.js';
 
 const router = express.Router();

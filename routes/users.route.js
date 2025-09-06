@@ -1,5 +1,6 @@
-import { getCurrentUser, login, register } from "../controllers/users.controller.js";
+// import { getCurrentUser, login, register } from "../controllers/users.controller.js";
 import { protect } from "../middlewares/verifyToken.js";
+import { getCurrentUser, login, register } from "../controller/users.controller.js";
 
 
 //routes for User Registration and User Login.

@@ -1,5 +1,5 @@
 import express from "express";
-import { getSearchSuggestions, searchContent } from "../controllers/search.controller.js";
+import { getSearchSuggestions, searchContent } from "../controller/search.controller.js";
 
 //Routing to search videos
 const router = express.Router();
