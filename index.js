@@ -3,6 +3,10 @@ import express from 'express';
 import mongoose from 'mongoose';
 import connectDatabase from './database/database.js';
 import {runAllSeeders} from "./seeder/masterSeeder.js"
+import { userRoutes } from "./routes/users.route.js";
+import videoRoutes from "./routes/video.routes.js";
+import searchRoute from "./routes/search.route.js"
+
 
 const app = express();
 const allowedOrigins = [
@@ -29,7 +33,7 @@ app.listen(PORT,()=>{
 // });
 
 app.get('/' , (req,res)=>{
-    res.send("Welcome to root route 3")
+    res.send("Welcome to root route 5")
 })
 
 connectDatabase().then(async ()=>{
