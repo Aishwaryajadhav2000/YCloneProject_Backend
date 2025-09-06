@@ -5,7 +5,16 @@ import connectDatabase from './database/database.js';
 import {runAllSeeders} from "./seeder/masterSeeder.js"
 
 const app = express();
-app.use(cors());
+const allowedOrigins = [
+   "http://localhost:4200",
+   "http://localhost:5173"
+];
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 const PORT = 8000;
