@@ -13,7 +13,7 @@ const app = express();
 const allowedOrigins = [
    "http://localhost:4200",
    "http://localhost:5173",
-   "https://you-tube-clone-black-pi.vercel.app/"
+   "https://you-tube-clone-black-pi.vercel.app"
 ];
 app.use(
   cors({
