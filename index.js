@@ -12,7 +12,8 @@ import { channelRoute } from "./routes/channel.routes.js";
 const app = express();
 const allowedOrigins = [
    "http://localhost:4200",
-   "http://localhost:5173"
+   "http://localhost:5173",
+   "https://you-tube-clone-black-pi.vercel.app/"
 ];
 app.use(
   cors({
@@ -26,12 +27,6 @@ const PORT = 8000;
 app.listen(PORT,()=>{
     console.log(`server connected to port : ${PORT}`)
 });
-
-// mongoose.connect('mongodb+srv://aishwaryaj1608_db_user:c5LO2prcJAFTOFsZ@yt.lfypvmp.mongodb.net/').then(()=>{
-//     console.log("DB connected...")
-// }).catch((err)=>{
-//     console.log(err , "error while connecting...")
-// });
 
 app.get('/' , (req,res)=>{
     res.send("Welcome to root route 6")
